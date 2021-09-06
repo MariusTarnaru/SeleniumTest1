@@ -26,7 +26,7 @@ public class LoginStep {
         driver.findElement(By.id("job-title")).sendKeys("JAVA Developer");
     }
 
-    @Then("I should see the userform page submiting")
+    @Then("I should see the userform page submitting")
     public void iShouldSeeTheUserformPage() {
         driver.findElement(new By.ByXPath("//a[contains(text(),'Submit')]")).click();
         // driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
